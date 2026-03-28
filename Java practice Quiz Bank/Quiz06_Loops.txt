@@ -1,0 +1,75 @@
+Topic A: Conditional Statements (Decision Making)
+- Basic: Maximum of Three Numbers
+Problem:
+	Write a Java program that takes three integer inputs from the user. The program should compare these numbers using if-else statements to determine and print the largest number among them.
+	Input: 10, 50, 30
+	Output: Largest is: 50
+	
+- Intermediate: The Leap Year Validator
+Problem:
+	Write a program to verify if a specific year is a Leap Year.
+	The Logic:
+	- A year is a leap year if it is divisible by 4.
+	- However, if the year is divisible by 100, it is not a leap year, unless...
+	- The year is also divisible by 400.
+	Input: 2000 -> Output: Leap Year
+	Input: 1900 -> Output: Not a Leap Year
+	
+- Hard: Tiered Electricity Bill Calculator
+Problem:
+	An electricity board charges the following rates for the use of electricity based on the number of units consumed:
+	- First 100 units: Free (Cost: 0)
+	- Next 100 units (101-200): $5 per unit
+	- Next 100 units (201-300): $10 per unit
+	- Above 300 units: $15 per unit
+	Write a program to calculate the total bill based on the input units.
+	Input: 350
+	Logic: (1000) + (1005) + (10010) + (5015)
+	Output: Total Bill: $2250
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic B: Loop Statements (Iteration)
+- Basic: Multiplication Table Generator
+Problem:
+	Write a program that takes an integer N as input. Using a for loop, print the multiplication table for that number from 1 to 10.
+	Input: 5
+	Output:
+	5 x 1 = 5
+	...
+	5 x 10 = 50
+	
+- Intermediate: Reverse a Number (Mathematical)
+Problem:
+	Write a program that inputs an integer (e.g., 1234) and prints its reverse (4321).
+	Constraint: You cannot convert the number to a String. You must use a while loop with Modulo (%) and Division (/) operators to extract and rearrange the digits mathematically.
+	- Hard: Prime Number Checker
+	Problem:
+	Write a program to determine if a given number N is a Prime Number.
+	Definition: A prime number is a number greater than 1 that has exactly two factors: 1 and itself.
+	Optimization Hint: If you find any number that divides N evenly between 2 and N/2, the number is not prime, and you should stop the loop immediately using break.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic C: Combined Challenges (Logic + Loops + Conditionals)
+- The ATM Interface
+Problem:
+	Create a menu-driven application that simulates a Bank ATM.
+	- The program should start with an initial balance (e.g., $5000).
+	- It should endlessly loop, showing the user a menu: 1. Check Balance, 2. Deposit, 3. Withdraw, 4. Exit.
+	Logic:
+	- If the user withdraws more than the balance, show "Insufficient Funds".
+	- The program should only stop running when the user selects option 4.
+	
+	
+- High-Low Number Guessing Game
+Problem:
+	Write a game where the system has a "Secret Number" (e.g., 42).
+	The program should ask the user to guess the number.
+	- If the guess is higher than the secret, print "Too High!".
+	- If the guess is lower than the secret, print "Too Low!".
+	- The game should continue asking for guesses (using a do-while loop) until the user guesses correctly.
+	Bonus: Count and print how many attempts it took to win.
+
+

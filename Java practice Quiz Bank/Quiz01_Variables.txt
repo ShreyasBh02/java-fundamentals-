@@ -1,0 +1,179 @@
+========================================
+        PROGRAM 1: LEVEL 1 (BASIC)
+========================================
+----------------------------------------
+OBJECTIVE
+----------------------------------------
+Create a Java program that demonstrates your understanding 
+of all 8 primitive data types in Java. The program should 
+declare, initialize, and display variables of each type 
+along with their practical use cases.
+
+----------------------------------------
+REQUIREMENTS
+----------------------------------------
+1. Declare and Initialize Variables for ALL 8 Primitive Types:
+   - byte   → Store a small number (e.g., age in years)
+   - short  → Store a medium-range number (e.g., year of birth)
+   - int    → Store a standard integer (e.g., population count)
+   - long   → Store a large number (e.g., phone number or file size)
+   - float  → Store a decimal with single precision (e.g., temperature)
+   - double → Store a decimal with double precision (e.g., scientific value like PI)
+   - char   → Store a single character (e.g., grade or initial)
+   - boolean→ Store true/false (e.g., is student enrolled?)
+
+2. Display Each Variable:
+   - Print the variable name, value, and a brief description of its use case
+
+3. Perform Basic Arithmetic Operations:
+   - Take two integer values
+   - Perform Addition, Subtraction, Multiplication, Division, and Modulus
+   - Display results
+
+4. Demonstrate String (Reference Type):
+   - Declare a String variable
+   - Concatenate two strings
+   - Display the length of a string
+
+5. Show Integer Division vs Decimal Division:
+   - Demonstrate that 10 / 3 gives 3 (integer)
+   - Show how to get accurate result using type casting
+
+----------------------------------------
+EXPECTED OUTPUT FORMAT
+----------------------------------------
+========================================
+   JAVA PRIMITIVE DATA TYPES - BASICS   
+========================================
+
+1. BYTE
+   Value: [your value]
+   Use: [your description]
+
+2. SHORT
+   Value: [your value]
+   Use: [your description]
+
+... continue for all 8 types ...
+
+========================================
+         ARITHMETIC OPERATIONS           
+========================================
+num1 = 10, num2 = 3
+Addition: 13
+Subtraction: 7
+... other operations ...
+
+----------------------------------------
+CONSTRAINTS
+----------------------------------------
+- Use meaningful variable names (not a, b, x)
+- Add comments explaining each data type
+- Use proper formatting for output
+- Do NOT use Scanner (hardcode values for this exercise)
+
+----------------------------------------
+BONUS CHALLENGE
+----------------------------------------
+- Display a Unicode character using \u notation
+- Show what happens when you try to store 130 in a byte variable
+
+
+
+
+
+========================================
+        PROGRAM 2: LEVEL 2 (MEDIUM)
+========================================
+----------------------------------------
+OBJECTIVE
+----------------------------------------
+Create a comprehensive Java program that explores:
+- Type casting (implicit and explicit)
+- Data type ranges
+- Overflow/underflow behavior
+- Utility of Wrapper Classes for type conversions
+
+----------------------------------------
+REQUIREMENTS
+----------------------------------------
+
+SECTION 1: Data Type Ranges
+- Display a table showing MIN and MAX values for all numeric primitive types
+- Use Wrapper class constants (e.g., Integer.MIN_VALUE, Byte.MAX_VALUE)
+- Format output in a table structure
+
+SECTION 2: Implicit Casting (Widening)
+- Start with a byte variable with value 100
+- Demonstrate automatic conversion through the chain:
+  byte → short → int → long → float → double
+- Print value at each step to show no data loss
+- Demonstrate char to int conversion (ASCII value)
+
+SECTION 3: Explicit Casting (Narrowing)
+- Convert double to int and show decimal truncation
+- Convert int (value: 130) to byte and explain overflow result
+- Convert large long to int and show data loss
+- Implement a safe casting check:
+  Before casting, verify if value is within target type's range
+  Only cast if safe, otherwise print warning
+
+SECTION 4: Overflow & Underflow
+- Demonstrate Integer.MAX_VALUE + 1 (overflow to MIN)
+- Demonstrate Integer.MIN_VALUE - 1 (underflow to MAX)
+- Create a byte counter loop from 125 to show overflow at 127
+
+SECTION 5: Wrapper Classes
+- Show boxing and unboxing:
+    int primitive = 42;
+    Integer wrapper = primitive;  // Auto-boxing
+    int back = wrapper;           // Auto-unboxing
+- Demonstrate useful Wrapper methods:
+    Integer.parseInt()
+    Double.parseDouble()
+    Integer.toBinaryString()
+    Integer.toHexString()
+- Show that Wrapper can be null but primitive cannot
+
+SECTION 6: String ↔ Primitive Conversion
+- Convert String "12345" to int
+- Convert String "99.99" to double
+- Convert String "true" to boolean
+- Convert int to String using 3 different methods
+- Handle invalid conversion with try-catch (e.g., "123abc" to int)
+
+----------------------------------------
+EXPECTED OUTPUT FORMAT
+----------------------------------------
+
+╔══════════════════════════════════════════════╗
+║   DATA TYPES - INTERMEDIATE CONCEPTS         ║
+╚══════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────┐
+│  SECTION 1: DATA TYPE RANGES (MIN/MAX)       │
+└──────────────────────────────────────────────┘
+
+Data Type    | Size (bits) | Min Value    | Max Value
+-------------|-------------|--------------|-------------
+byte         | 8           | -128         | 127
+... continue for all numeric types ...
+
+┌──────────────────────────────────────────────┐
+│  SECTION 2: IMPLICIT CASTING (Widening)      │
+└──────────────────────────────────────────────┘
+... output ...
+
+----------------------------------------
+CONSTRAINTS
+----------------------------------------
+- Use formatted output (System.out.printf)
+- Handle all exceptions properly
+- Add visual separators between sections
+
+----------------------------------------
+BONUS CHALLENGE
+----------------------------------------
+- Create a method safeCast(int value, String targetType) 
+  that returns the casted value only if safe
+- Display memory size in bytes for each primitive type
