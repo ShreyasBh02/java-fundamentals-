@@ -1,0 +1,45 @@
+Topic A:  Loop Statements (Iteration)
+- Basic: Multiplication Table Generator
+Problem:
+	Write a program that takes an integer N as input. Using a for loop, print the multiplication table for that number from 1 to 10.
+	Input: 5
+	Output:
+	5 x 1 = 5
+	...
+	5 x 10 = 50
+	
+- Intermediate: Reverse a Number (Mathematical)
+Problem:
+	Write a program that inputs an integer (e.g., 1234) and prints its reverse (4321).
+	Constraint: You cannot convert the number to a String. You must use a while loop with Modulo (%) and Division (/) operators to extract and rearrange the digits mathematically.
+	
+- Hard: Prime Number Checker
+	Problem:
+	Write a program to determine if a given number N is a Prime Number.
+	Definition: A prime number is a number greater than 1 that has exactly two factors: 1 and itself.
+	Optimization Hint: If you find any number that divides N evenly between 2 and N/2, the number is not prime, and you should stop the loop immediately using break.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic B: Combined Challenges (Logic + Loops + Conditionals)
+- The ATM Interface
+Problem:
+	Create a menu-driven application that simulates a Bank ATM.
+	- The program should start with an initial balance (e.g., $5000).
+	- It should endlessly loop, showing the user a menu: 1. Check Balance, 2. Deposit, 3. Withdraw, 4. Exit.
+	Logic:
+	- If the user withdraws more than the balance, show "Insufficient Funds".
+	- The program should only stop running when the user selects option 4.
+	
+	
+- High-Low Number Guessing Game
+Problem:
+	Write a game where the system has a "Secret Number" (e.g., 42).
+	The program should ask the user to guess the number.
+	- If the guess is higher than the secret, print "Too High!".
+	- If the guess is lower than the secret, print "Too Low!".
+	- The game should continue asking for guesses (using a do-while loop) until the user guesses correctly.
+	Bonus: Count and print how many attempts it took to win.
+
+
