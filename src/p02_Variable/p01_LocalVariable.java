@@ -11,7 +11,7 @@ public class p01_LocalVariable {
         // Accessible only within this method
         	System.out.println(message);
 
-        // Block scope example
+        // Block scope 
         if (true) {
 	            int blockVar = 100; // Local variable inside block
 	            System.out.println("Block variable value: " + blockVar);
